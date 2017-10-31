@@ -13,11 +13,11 @@
 	This is called \emph{Russell's Paradox}, and shows
 	that if we start talking about sets of sets, we may need more than
 	intuition.}. We write a set with curly-braces $\{$ and $\}$ and
-	list the objects inside.  For instance,
+	list the objects inside.  For instance
 	\[
-		\Set{1,2,3}
+		\Set{1,2,3}.
 	\]
-	would be read aloud as ``the set containing the elements $1$, $2$, and $3$.''
+	This would be read aloud as ``the set containing the elements $1$, $2$, and $3$.''
 	The symbol $\in$\index{$\in$} is used to specify that some object is an element of a set, and
 	$\notin$ is used to specify it is not.  For example,
 	\[
@@ -32,7 +32,7 @@
 	It is tradition to use capital letters to name sets.  So we might say $A=\{6,7,12\}$
 	or $X=\{7\}$.  There is, however, a special set with a special name---the
 	empty set.  The \emph{empty set} is the set containing no elements
-	and is written $\varnothing$ or $\Set{}$.  Note that $\Set{\varnothing}$ is \emph{not}
+	and is written $\emptyset$ or $\Set{}$.  Note that $\Set{\emptyset}$ is \emph{not}
 	the empty set.  It is the set containing the empty set!  It is also traditional
 	to call elements of a set \emph{points}\index{point} regardless of whether you
 	consider them ``point-like'' objects.
@@ -65,7 +65,7 @@
 
 		First, let us show $A\subseteq B$.  If $x\in A$, then $x=2n$
 		for some whole number $n$.  Therefore $x=2n=2(n-1)+1+1=m+1$ where
-		$m=2(n-1)+1$ is, by definition, an even number.  Therefore $x\in B$.
+		$m=2(n-1)+1$ is, by definition, an odd number.  Therefore $x\in B$.
 
 		Now we will show $B\subseteq A$.  Let $x\in B$.  By definition,
 		$x=m+1$ for some odd $m$ and so by the definition of oddness, $m=2k+1$
@@ -90,7 +90,7 @@
 	involving $a$ is true.''  If $X$ is intuitive, we may omit it and
 	simply write $Y=\Set{a\given\text{some rule involving }a}$\footnote{ If you want
 	to get technical, to make this notation unambiguous, you define a 
-	\emph{universe of discourse}, that is, a set $\mathcal U$ containing
+	\emph{universe of discourse}. That is, a set $\mathcal U$ containing
 	every object you might want to talk about. Then $\Set{a\given\text{some rule involving }a}$
 	is short for $\Set{a\in\mathcal U\given\text{some rule involving }a}$}.  You may equivalently
 	use ``$|$'' instead of ``$:$'', writing $Y=\{a\,|\,\text{some rule involving }a\}$.
@@ -144,7 +144,7 @@
 
 	Let's define some notation for common sets.
 	\begin{align*}
-		\varnothing &= \Set{}\text{, the empty set}\\
+		\emptyset &= \Set{}\text{, the empty set}\\
 		\N &= \Set{0,1,2,3,\ldots}=\Set{\text{natural numbers}}\\
 		\Z &= \Set{\ldots, -3,-2,-1,0,1,2,3,\ldots}=\Set{\text{integers}}\\
 		\Q &= \Set{\text{rational numbers}}\\
@@ -224,7 +224,7 @@
 
 	\begin{definition}[Range]
 		The \emph{range}\index{range} of a function $f:A\to B$
-		is the set of all outputs of $f$, that is
+		is the set of all outputs of $f$. That is
 		\[
 			\Range f = \Set{y\in B\given y=f(x)\text{ for some }x\in A}.
 		\]
